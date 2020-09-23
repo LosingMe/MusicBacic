@@ -58,6 +58,13 @@ class ViewController: UIViewController {
     @IBOutlet weak var upperScroll: UIScrollView!
     
 
+    
+    @IBOutlet weak var stepInCtrl: UIStackView!
+    
+    
+    
+    
+    
     // MARK:- 开始的地方
     override func viewDidLoad() {
         super.viewDidLoad()

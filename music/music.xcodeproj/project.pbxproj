@@ -10,7 +10,6 @@
 		230832D522315AC100FE4576 /* output.png in Resources */ = {isa = PBXBuildFile; fileRef = 230832D422315AC100FE4576 /* output.png */; };
 		2374A1C72222C5FA006A92E1 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2374A1C62222C5FA006A92E1 /* AVFoundation.framework */; };
 		23B666B422228006007A7CF8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B666B322228006007A7CF8 /* AppDelegate.swift */; };
-		23B666B622228006007A7CF8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B666B522228006007A7CF8 /* ViewController.swift */; };
 		23B666B922228006007A7CF8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23B666B722228006007A7CF8 /* Main.storyboard */; };
 		23B666BC22228006007A7CF8 /* music.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 23B666BA22228006007A7CF8 /* music.xcdatamodeld */; };
 		23B666BE22228008007A7CF8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23B666BD22228008007A7CF8 /* Assets.xcassets */; };
@@ -51,7 +50,6 @@
 		2374A1C62222C5FA006A92E1 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		23B666B022228006007A7CF8 /* music.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = music.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		23B666B322228006007A7CF8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		23B666B522228006007A7CF8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		23B666B822228006007A7CF8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		23B666BB22228006007A7CF8 /* music.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = music.xcdatamodel; sourceTree = "<group>"; };
 		23B666BD22228008007A7CF8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -151,7 +149,6 @@
 				23B666BA22228006007A7CF8 /* music.xcdatamodeld */,
 				23B666C822228029007A7CF8 /* src */,
 				26073B6922CB7235004D4294 /* Use.plist */,
-				23B666B522228006007A7CF8 /* ViewController.swift */,
 				26163A3C22915EE700D57986 /* ViewControllerCommon.swift */,
 				265219B022D9FCC400122DDB /* Views */,
 			);
@@ -355,7 +352,6 @@
 			files = (
 				23B666BC22228006007A7CF8 /* music.xcdatamodeld in Sources */,
 				265219B222D9FCD800122DDB /* ScrollView.swift in Sources */,
-				23B666B622228006007A7CF8 /* ViewController.swift in Sources */,
 				23B666B422228006007A7CF8 /* AppDelegate.swift in Sources */,
 				261E6758237AC1F8005C1CD7 /* UserSettings.swift in Sources */,
 				26BCEB7D22EA832500E0FA9E /* ControllerMore.swift in Sources */,
