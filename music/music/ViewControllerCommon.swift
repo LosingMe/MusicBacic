@@ -30,7 +30,13 @@ class ViewController: UIViewController {
     
     
     
-   
+    @IBOutlet weak var volumeMinorSlide: UISlider!
+    
+    
+    
+    
+    @IBOutlet weak var speedSlide: UISlider!
+    
     
     var volume_plantar: Float = UserSettings.shared.volume_embryology{
         didSet{
@@ -211,8 +217,34 @@ class ViewController: UIViewController {
     
     @IBAction func changeVolume(_ sender: UISlider) {
         volume_plantar = sender.value
+        if volume_plantar >= 0.3{
+            volumeMinorSlide.value = 0.3
+        }
+        else{
+            volumeMinorSlide.value = volume_plantar
+        }
+        
     }
     
+    @IBAction func minorVolumeChangeSlide(_ sender: UISlider) {
+        
+        volume_plantar = sender.value
+        volume.value = volume_plantar
+        
+    }
+    
+    
+    
+    
+    @IBAction func speedChangeSlide(_ sender: UISlider) {
+        
+        
+        
+        
+        
+        
+        
+    }
     
     
     
@@ -260,6 +292,14 @@ class ViewController: UIViewController {
         
         
     }
+    
+    
+    
+    
+
+    
+    
+    
     
     
     
@@ -523,7 +563,7 @@ extension ViewController{
         progressBar.setThumbImage(thumb, for: UIControl.State.normal)
         
         volume.setMinimumTrackImage(minImage, for: UIControl.State.normal)
-        volume.minimumTrackTintColor = UIColor.darkGray
+        volume.minimumTrackTintColor = UIColor.blue
         volume.setMaximumTrackImage(maxImage, for: UIControl.State.normal)
         volume.maximumTrackTintColor = .magenta
         volume.setThumbImage(thumb, for: UIControl.State.normal)
@@ -531,6 +571,35 @@ extension ViewController{
         volume.minimumValue = 0
         volume.maximumValue = 1
         volume.value = volume_plantar
+        
+        
+        
+        volumeMinorSlide.setMinimumTrackImage(minImage, for: UIControl.State.normal)
+        volumeMinorSlide.minimumTrackTintColor = UIColor.green
+        volumeMinorSlide.setMaximumTrackImage(maxImage, for: UIControl.State.normal)
+        volumeMinorSlide.maximumTrackTintColor = .magenta
+        volumeMinorSlide.setThumbImage(thumb, for: UIControl.State.normal)
+        
+        volumeMinorSlide.minimumValue = 0
+        volumeMinorSlide.maximumValue = 0.3
+        if volume_plantar >= 0.3{
+            volumeMinorSlide.value = 0.3
+        }
+        else{
+            volumeMinorSlide.value = volume_plantar
+        }
+        
+        
+        speedSlide.setMinimumTrackImage(minImage, for: UIControl.State.normal)
+        speedSlide.minimumTrackTintColor = UIColor.purple
+        speedSlide.setMaximumTrackImage(maxImage, for: UIControl.State.normal)
+        speedSlide.maximumTrackTintColor = .magenta
+        speedSlide.setThumbImage(thumb, for: UIControl.State.normal)
+        
+        speedSlide.minimumValue = 0
+        speedSlide.maximumValue = 1
+       // speedSlide.value = volume_plantar
+        
     }
     
 }

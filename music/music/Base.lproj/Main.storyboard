@@ -178,6 +178,9 @@
                                             <constraint firstAttribute="height" constant="40" id="lJb-ji-tT6"/>
                                         </constraints>
                                         <color key="minimumTrackTintColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <connections>
+                                            <action selector="minorVolumeChangeSlide:" destination="BYZ-38-t0r" eventType="valueChanged" id="VDH-aI-PRy"/>
+                                        </connections>
                                     </slider>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="音量控制" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T7j-tE-szH">
                                         <rect key="frame" x="10" y="460" width="355" height="24"/>
@@ -201,6 +204,9 @@
                                             <constraint firstAttribute="height" constant="40" id="AVw-OA-EqW"/>
                                         </constraints>
                                         <color key="minimumTrackTintColor" systemColor="systemPurpleColor" red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <connections>
+                                            <action selector="speedChangeSlide:" destination="BYZ-38-t0r" eventType="valueChanged" id="c3C-t5-gIQ"/>
+                                        </connections>
                                     </slider>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="速度控制" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="099-xR-53T">
                                         <rect key="frame" x="146.5" y="620" width="82" height="24"/>
@@ -234,13 +240,13 @@
                                         <color key="textColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VzC-Yp-lIe" userLabel="rhs_0_volume">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VzC-Yp-lIe" userLabel="rhs_0_volume">
                                         <rect key="frame" x="328" y="460" width="50" height="20.5"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="50" id="WrE-GN-8tU"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
+                                        <color key="textColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bis-36-V0L" userLabel="lhs_0_speed">
@@ -344,11 +350,13 @@
                         <outlet property="durationLabel" destination="QOh-s8-mLA" id="MHQ-lY-jXq"/>
                         <outlet property="pickerView" destination="aNK-Kc-G9l" id="Fsj-Wr-YWL"/>
                         <outlet property="progressBar" destination="hcE-h6-jLb" id="6Jf-aY-HBJ"/>
+                        <outlet property="speedSlide" destination="DbA-7L-vvK" id="B6T-03-SOM"/>
                         <outlet property="stepInCtrl" destination="lk1-SR-vcT" id="R2h-di-YYF"/>
                         <outlet property="tempTimeLabel" destination="0f2-un-46U" id="dHJ-HF-chy"/>
                         <outlet property="timesTextField" destination="hvS-5t-kR5" id="eyj-3x-uWE"/>
                         <outlet property="upperScroll" destination="Mdj-Po-AZc" id="aGq-5X-Qhm"/>
                         <outlet property="volume" destination="PC1-eC-5ho" id="XWQ-L7-Iia"/>
+                        <outlet property="volumeMinorSlide" destination="pgc-DJ-C7H" id="0dP-yV-SQx"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
